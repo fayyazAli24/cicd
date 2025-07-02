@@ -18,6 +18,9 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
+      - name: Install Firebase CLI
+        run: npm install -g firebase-tools
+
       - name: Install Flutter
         uses: subosito/flutter-action@v2
         with:
